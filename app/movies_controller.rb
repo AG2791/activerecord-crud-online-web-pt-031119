@@ -32,7 +32,7 @@ def can_be_created_in_a_block(args = {:title ="Inception" :release_date = 2008})
   Movie.create do |m|
   m.title = args[0]
   m.release_date = [1]
-    
+  m.save 
   end
 end
 
